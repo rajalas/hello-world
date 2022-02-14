@@ -1,4 +1,4 @@
-name: Sample Matrix Parallel
+name: Sample Matrix
 on: workflow_dispatch
 jobs:
   job:
