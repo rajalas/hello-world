@@ -1,0 +1,23 @@
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # This step checks out a copy of your repository.
+      - uses: actions/checkout@v2
+      # This step references the directory that contains the action.
+      - uses: ./.github/actions/hello-world-action
+      
+ 
+ #If an action is defined in a different repository than your workflow file, you can reference the action with the {owner}/{repo}@{ref} syntax in your workflow file. 
+ #The action must be stored in a public repository.
+
+jobs:
+  my_first_job:
+    steps:
+      - name: My first step
+        uses: actions/setup-node@v1.1.0
+#Using tags
+#Tags are useful for letting you decide when to switch between major and minor versions, This example demonstrates how to target an action that's been tagged as v1.0.1:
+
+steps:
+  - uses: actions/checkout@v2
