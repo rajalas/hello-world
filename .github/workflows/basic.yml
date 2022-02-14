@@ -3,12 +3,7 @@
 
 name: basic actions
 
-on:
-  workflow_dispatch:
-    inputs:
-      section_name:
-        description: test
-
+on: [push, workflow_dispatch]
 
 jobs:
   build:
