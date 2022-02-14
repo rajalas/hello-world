@@ -4,6 +4,9 @@
 name: basic actions
 on: push
 #on: [push, workflow_dispatch]
+#on: 
+ # schedule:
+ #-cron: 0 2 **1
 
 jobs:
   build:
